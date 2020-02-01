@@ -9,6 +9,13 @@ export default class Header extends Component{
         super(props);
         this.state = {
             drawerOpen: false,
+            drawerItems : [
+                {name:'Event starts in',id:1},
+                {name:'Venu NFO',id:2},
+                {name:'Highlights',id:3},
+                {name:'Pricing',id:4},
+                {name:'Location',id:5},
+            ]
         }
     }
     toggleDrawer = (value) =>{
@@ -42,6 +49,7 @@ export default class Header extends Component{
                     <SideDrawer 
                         open = {this.state.drawerOpen}
                         onClose = {(value)=>this.toggleDrawer(value)}
+                        drawerItems = {this.state.drawerItems}
                     />
                 </Toolbar>
             </AppBar>

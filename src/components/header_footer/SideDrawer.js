@@ -11,7 +11,11 @@ const SideDrawer = (props) =>{
             onClose={()=> props.onClose(false)}
         >
             <List component="nav">
-
+                {props.drawerItems.map((item,i)=>
+                    <ListItem key={i} button onClick={()=>console.log(item.name)}>
+                        {item.name}
+                    </ListItem>
+                )}
             </List>
         </Drawer>
     )
