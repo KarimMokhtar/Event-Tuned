@@ -11,11 +11,11 @@ export default class Header extends Component{
             drawerOpen: false,
             headerShow: false,
             drawerItems : [
-                {name:'Event starts in',id:1},
-                {name:'Venu NFO',id:2},
-                {name:'Highlights',id:3},
-                {name:'Pricing',id:4},
-                {name:'Location',id:5},
+                {name:'Event starts in',scrollName:'features' ,id:1},
+                {name:'Venu NFO',scrollName:'venuefo',id:2},
+                {name:'Highlights',scrollName:'highlights',id:3},
+                {name:'Pricing',scrollName:'pricing',id:4},
+                {name:'Location',scrollName:'location',id:5},
             ]
         }
     }
